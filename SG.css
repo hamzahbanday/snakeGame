@@ -1,0 +1,187 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.snake{
+    background-color: black;
+}
+
+.sBody{
+    background-color: #fff;
+}
+
+.food{
+    background-color: red;
+}
+
+.gameContainer{
+    position: absolute;
+    top: 15vh;
+    border: 2px solid #fff;
+    height: 60vh;
+    width: 85vw;
+    border-radius: 15px;
+    max-width: 575px;
+    /* Grid layout */
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    background-color:  #a6a6a6;
+    grid-gap: 0.25vmin;
+    
+
+}
+
+
+
+.btnContainer{
+    position: absolute;
+    display: flex;
+    bottom: 9vh;
+    
+
+}
+
+.upDown{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.upDown button{
+    height: 2em;
+    width: 2rem;
+}
+
+.btnContainer button{
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#topScore{
+    position: absolute;
+    top: 2vh;
+    color: #fff; 
+    font-size: 2rem;
+}
+
+
+.popup{
+    position: absolute;
+    height: 55%;
+    width: 75%;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald';
+    border-radius: 10px;
+    border: 3px solid black;
+    bottom: 27%;
+    max-width: 400px;
+  
+
+}
+
+.popup span{
+    font-size: 3rem;
+    position: relative;
+    bottom: 15%;
+} 
+
+.popup div{
+    font-size: 0.75rem;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.popup div span{
+    
+    font-size: 0.75rem;
+    position: relative;
+    
+}
+
+
+
+#score{
+    color: #000;
+}
+
+#replay{
+    cursor: pointer;
+    position: absolute;
+    bottom: 15%;
+    font-size: 1rem;
+}
+
+
+#difficultySelector{
+    position: absolute;
+    z-index: 100;
+    background-color: whitesmoke;
+    min-width: 200px;
+    max-width: 500px;
+    height: 20rem;
+    padding: 0px;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;    
+}
+
+#difficultySelector h3{
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#difficultySelector .btnContainer{
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sBtn{
+    margin: 5px;
+
+}
+
+.Over{
+    position: relative;
+    left: 11%;
+}
+    
+
+
+
+
+
+

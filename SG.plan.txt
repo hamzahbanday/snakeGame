@@ -1,0 +1,19 @@
+#Contents
+
+Full Wrapping Container(containing all elements)
+Game play area(grid layout)
+control btns(linked with keyboard arrow keys)
+score display area
+snake div
+food div
+
+#Logic
+Game loop D
+fps 5 D
+create snake div D
+create food div(at random positions) D
+add to snake body D
+make snake move
+add game over (1. on going outside play area  2. eating its body)
+game over function(pop up to display score and high scores reload after 5secs)
+update score with each eat

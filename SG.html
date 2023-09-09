@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="SG.css">
+
+    <!-- Font Awesome imports -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    
+</head>
+<body>
+
+        <!-- Full Wrapping Container -->
+<div class="container">
+
+
+    <!-- Difficulty Selector popup -->
+    <div id="difficultySelector">
+        <h3>Select Difficulty to start the Game</h3>
+
+        <div class="btnCont">
+
+            <button id="beginner" class="sBtn btn btn-lg btn-dark ">Beginner</button>
+            
+            <button id="inter" class="sBtn btn btn-lg btn-dark ">Intermediate</button>
+            
+            <button id="pro" class="sBtn btn btn-lg btn-dark ">Pro!</button>
+        </div>
+            
+    </div>
+    
+
+
+        <!-- Game Play Area -->
+        <div class="gameContainer">
+
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="btnContainer">
+
+            
+
+            <button class="left"><i class="fas fa-arrow-left"></i></button>
+            
+            <div class="upDown">
+                <button class="up"><i class="fas fa-arrow-up"></i></button>
+                <button class="down"><i class="fas fa-arrow-down"></i></button>
+            </div>
+            
+            <button class="right"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+       
+
+        <!-- Score Display -->
+        <div id="topScore">
+            <span>Score : <span id="SCORE"></span> </span>
+        </div>
+
+
+        <div class="popup">
+            <span>
+                <span class= "Over">Game Over!</span> <br>
+                
+                Your score is: <span id="score"> </span>
+            </span>
+
+            <button id="replay" class="sBtn btn btn-lg btn-dark">
+                Restart
+
+            </button>
+        
+        </div>
+    </div>
+
+
+
+    <script src="SG.js"></script>
+</body>
+</html>
